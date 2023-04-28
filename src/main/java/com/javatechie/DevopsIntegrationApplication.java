@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DevopsIntegrationApplication {
 
-@GetMapping("/zaidi")
-	public String getData() {
-		return "Welcome To My Running SpringAPP Final";
+	@GetMapping
+	public String message(){
+		return "Hi Friends Latest Devops Projects Uploaded Daily Based . LiKe & Share this video & also Subscribe";
 	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(DevopsIntegrationApplication.class, args);
+	}
+
 }
